@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Oglasi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Oglas>
+        <Kategorija>Stanovi</Kategorija>
+        <DatumIsteka>2022-05-30</DatumIsteka>
+        <Cena valuta="EUR">3000</Cena>
+        <Tekst>Stan na prodaju, naselje Sremčica, ima sve papire</Tekst>
+        <Oznaka>Sremčica</Oznaka>
+        <Oznaka>Nekretnne</Oznaka>
+        <Oznaka>Dvosoban stan</Oznaka>
+        <Email tip="privatni">para@gmail.com</Email>
+    </Oglas>
+    <Oglas>
+        <Kategorija>Alat</Kategorija>
+        <DatumIsteka>2022-06-23</DatumIsteka>
+        <Cena>12000</Cena>
+        <Tekst>BOSCH dijamantska brusilica, jedva korišćena</Tekst>
+        <Oznaka>BOSCH</Oznaka>
+        <Oznaka>Dijamantska ploča</Oznaka>
+        <Oznaka>Ugaona brusilica</Oznaka>
+        <Oznaka>Očuvano</Oznaka>
+        <Email tip="privatni">mika@gmail.com</Email>
+        <Email tip="sluzbeni">mika.komerc@gmail.com</Email>
+    </Oglas>
+    <Oglas>
+        <Kategorija>Ljubimci</Kategorija>
+        <DatumIsteka>2022-08-13</DatumIsteka>
+        <Cena>5000</Cena>
+        <Tekst>Kućica za psa manjeg ili srednjeg rasta</Tekst>
+        <Oznaka>Psi</Oznaka>
+        <Email tip="sluzbeni">zika.komerc@gmail.com</Email>
+    </Oglas>
+</Oglasi>
