@@ -20,7 +20,7 @@
         <Oznaka>Ugaona brusilica</Oznaka>
         <Oznaka>Očuvano</Oznaka>
         <Email tip="privatni">mika@gmail.com</Email>
-        <Email tip="sluzbeni">mika.komerc@gmail.com</Email>
+        <Email tip="službeni">mika.komerc@gmail.com</Email>
     </Oglas>
     <Oglas>
         <Kategorija>Ljubimci</Kategorija>
@@ -28,6 +28,6 @@
         <Cena>5000</Cena>
         <Tekst>Kućica za psa manjeg ili srednjeg rasta</Tekst>
         <Oznaka>Psi</Oznaka>
-        <Email tip="sluzbeni">zika.komerc@gmail.com</Email>
+        <Email tip="službeni">zika.komerc@gmail.com</Email>
     </Oglas>
 </Oglasi>
