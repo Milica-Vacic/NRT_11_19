@@ -1,10 +1,12 @@
 <!ELEMENT Oglasi (Oglas+)>
+<!ATTLIST Oglasi xmlns:xsi CDATA #IMPLIED>
 <!ELEMENT Oglas (Kategorija, DatumIsteka,Cena,Tekst,Oznaka*,Email+)>
-<!ELEMENT Kategorija (Stanovi|Alat|Ljubimci|Nameštaj|Automobili|Kozmetika|Odeća|Obuća)>
+<!ELEMENT Kategorija EMPTY>
+<!ATTLIST Kategorija tip (Stanovi|Alat|Ljubimci|Nameštaj|Automobili|Kozmetika|Odeća|Obuća) #REQUIRED>
 <!ELEMENT DatumIsteka (#PCDATA)>
 <!ELEMENT Cena (#PCDATA)>
 <!ATTLIST Cena valuta (EUR|RSD|USD) "RSD">
-<!ELEMENT Tekst (CDATA)>
+<!ELEMENT Tekst (#PCDATA)>
 <!ELEMENT Oznaka (#PCDATA)>
 <!ELEMENT Email (#PCDATA)>
 <!ATTLIST Email tip (privatni|službeni) #REQUIRED>
