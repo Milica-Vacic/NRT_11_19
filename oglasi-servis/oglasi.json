@@ -1,0 +1,40 @@
+[
+    {
+        "id":"1",
+        "kategorija":"Stanovi",
+        "datumIsteka":"2022-05-30",
+        "cena":"3000",
+        "valuta":"EUR",
+        "tekst":"Stan na prodaju, naselje Sremčica, ima sve papire",
+        "oznaka":["Sremčica","Nekretnine","Dvosoban stan"],
+        "email":
+        [
+            {"tip":"privatni", "vrednost":"para@gmail.com"}
+        ]
+
+    },
+    {
+        "id":"2",
+        "kategorija":"Alat",
+        "datumIsteka":"2022-06-23",
+        "cena":"12000",
+        "tekst":"BOSCH dijamantska brusilica, jedva korišćena",
+        "oznaka":["BOSCH","Dijamantska ploča","Ugaona brusilica", "Očuvano"],
+        "email":
+        [
+            {"tip":"privatni", "vrednost":">mika@gmail.com"},
+            {"tip":"službeni", "vrednost":">mika.komerc@gmail.com"}
+        ]
+
+    },
+    {
+        "id":"3",
+        "kategorija":"Ljubimci",
+        "datumIsteka":"2022-08-13",
+        "cena":"5000",
+        "tekst":"Kućica za psa manjeg ili srednjeg rasta",
+        "oznaka":["Psi"],
+        "email":{"tip":"službeni", "vrednost":"žika.komerc@gmail.com"}
+
+    }
+]
