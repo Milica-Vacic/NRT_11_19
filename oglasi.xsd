@@ -11,7 +11,7 @@
             <xs:sequence>
               <xs:element name="Kategorija">
                 <xs:complexType>
-                        <xs:attribute name="tip">
+                        <xs:attribute name="tip" use="required">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
                                     <xs:enumeration value="Stanovi"></xs:enumeration>
@@ -65,7 +65,7 @@
   <xs:complexType name="CenaBase">
    <xs:simpleContent>
       <xs:extension base="xs:decimal">
-        <xs:attribute name="valuta" default="RSD">
+        <xs:attribute name="valuta" default="RSD" use="optional">
             <xs:simpleType>
                 <xs:restriction base="xs:string">
                   <xs:enumeration value="RSD"></xs:enumeration>

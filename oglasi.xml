@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE Oglasi SYSTEM "oglasi.dtd">
-<Oglasi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Oglasi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="oglasi.xsd">
     <Oglas>
         <Kategorija tip="Stanovi"></Kategorija>
         <DatumIsteka>2022-05-30</DatumIsteka>
         <Cena valuta="EUR">3000</Cena>
-        <Tekst>Stan na prodaju, naselje Sremčica, ima sve papire</Tekst>
+        <Tekst><![CDATA[Stan na prodaju, naselje Sremčica, ima sve papire]]></Tekst>
         <Oznaka>Sremčica</Oznaka>
         <Oznaka>Nekretnne</Oznaka>
         <Oznaka>Dvosoban stan</Oznaka>
@@ -15,7 +16,7 @@
         <Kategorija tip="Alat"></Kategorija>
         <DatumIsteka>2022-06-23</DatumIsteka>
         <Cena>12000</Cena>
-        <Tekst>BOSCH dijamantska brusilica, jedva korišćena</Tekst>
+        <Tekst><![CDATA[BOSCH dijamantska brusilica, jedva korišćena]]></Tekst>
         <Oznaka>BOSCH</Oznaka>
         <Oznaka>Dijamantska ploča</Oznaka>
         <Oznaka>Ugaona brusilica</Oznaka>
@@ -27,7 +28,7 @@
         <Kategorija tip="Ljubimci"></Kategorija>
         <DatumIsteka>2022-08-13</DatumIsteka>
         <Cena>5000</Cena>
-        <Tekst>Kućica za psa manjeg ili srednjeg rasta</Tekst>
+        <Tekst><![CDATA[Kućica za psa manjeg ili srednjeg rasta]]></Tekst>
         <Oznaka>Psi</Oznaka>
         <Email tip="službeni">zika.komerc@gmail.com</Email>
     </Oglas>

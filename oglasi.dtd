@@ -1,5 +1,6 @@
 <!ELEMENT Oglasi (Oglas+)>
 <!ATTLIST Oglasi xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST Oglasi xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
 <!ELEMENT Oglas (Kategorija, DatumIsteka,Cena,Tekst,Oznaka*,Email+)>
 <!ELEMENT Kategorija EMPTY>
 <!ATTLIST Kategorija tip (Stanovi|Alat|Ljubimci|Nameštaj|Automobili|Kozmetika|Odeća|Obuća) #REQUIRED>
