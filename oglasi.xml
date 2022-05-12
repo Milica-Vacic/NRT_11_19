@@ -8,7 +8,7 @@ xsi:noNamespaceSchemaLocation="oglasi.xsd">
         <Cena valuta="EUR">3000</Cena>
         <Tekst><![CDATA[Stan na prodaju, naselje Sremčica, ima sve papire]]></Tekst>
         <Oznaka>Sremčica</Oznaka>
-        <Oznaka>Nekretnne</Oznaka>
+        <Oznaka>Nekretnine</Oznaka>
         <Oznaka>Dvosoban stan</Oznaka>
         <Email tip="privatni">para@gmail.com</Email>
     </Oglas>
