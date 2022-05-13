@@ -14,24 +14,29 @@ app.get('/oglas/:id',(request, response)=>{
     response.send(oglasi.getOglas(request.params.id))
 });
 
-app.get('/oglas/kategorija/:kat',(request, response)=>{
-    response.send(oglasi.filterKategorija(request.params.kat))
+app.post('/oglas/kategorija',(request, response)=>{
+    response.send(oglasi.filterKategorija(request.body.kat))
 });
 
-app.get('/oglas/oznaka/:ozn',(request, response)=>{
-    response.send(oglasi.filterOznaka(request.params.ozn))
+app.post('/oglas/oznaka',(request, response)=>{
+    response.send(oglasi.filterOznaka(request.body.ozn))
 });
 
 app.post('/oglas',(request, response)=>{
-    response.send(oglasi.dodajOglas(request.body))
+    oglasi.dodajOglas(request.body)
+    response.end("OK")
 });
 
-app.put('/oglas/:id',(request, response)=>{
-    response.send(oglasi.izmeniOglas(request.params.id, request.body))
+app.patch('/oglas/:id',(request, response)=>{
+    console.log("Server")
+    oglasi.izmeniOglas(request.params.id, request.body)
+    response.end("OK")
 });
 
 app.delete('/oglas/:id',(request, response)=>{
-    response.send(oglasi.obrisiOglas(request.params.id))
+    console.log(request.params.id)
+    oglasi.obrisiOglas(parseInt(request.params.id))
+    response.end("OK")
 });
 
 app.listen(port,()=>{console.log(`startovan server na portu ${port}`)});

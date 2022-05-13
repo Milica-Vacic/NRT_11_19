@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izmeni Oglas</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Oglasi</a>
+        <a href="/oglas/dodaj">Dodaj oglas</a>
+    </nav>
+
+    <form id="form" action="/oglas/izmeni/#{DATA}" method="post">
+        <Label>Kategorija: </Label>
+        <select name="kategorija" id="kategorija">
+            <option selected value="Stanovi">Stanovi</option>
+            <option value="Alat">Alat</option>
+            <option value="Ljubimci">Ljubimci</option>
+            <option value="Nameštaj">Nameštaj</option>
+            <option value="Automobili">Automobili</option>
+            <option value="Kozmetika">Kozmetika</option>
+            <option value="Odeća">Odeća</option>
+            <option value="Obuća">Obuća</option>
+        </select>
+        <br>
+        <Label>Datum isteka (format 2022-15-05): </Label>
+        <input type="text" name="datumIsteka" placeholder="Datum isteka..."/>
+        <br>
+        <Label>Cena: </Label>
+        <input type="text" name="cena" placeholder="Cena..."/>
+        <br>
+        <Label>Valuta: </Label>
+        <select name="valuta" id="valuta">
+            <option selected value="RSD">RSD</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+        </select>
+        <Label>Tekst: </Label>
+        <textarea name="tekst"></textarea>
+        <br>
+        <Label>Oznake (razdvajati#tarabama#na ovaj nacin): </Label>
+        <textarea name="oznake"></textarea>
+        <br>
+        <div id="mailDiv">
+            <Label>Email: </Label>
+            <select name="tip">
+                <option selected value="privatni">Privatni</option>
+                <option value="službeni">Službeni</option>
+            </select>
+            <br>
+            <input type="email" name="email"/>
+            <br>
+            <button type="button" id="mailBtn" onclick="dodajEmail()">Još</button>
+            <br>
+        </div>
+        <button onclick="submit()" type="submit">Izmeni</button>
+
+        
+    </form>
+</body>
+</html>
+
+<script>
+    let count=0
+    function dodajEmail(){
+        count++
+        let div=document.getElementById("mailDiv")
+        let btn=document.getElementById("mailBtn")
+        let txt=document.createElement("input")
+        txt.type="email"
+        txt.name="email"
+        let slct=document.createElement("select")
+        slct.name="tip"
+        slct.innerHTML=`
+            <option selected value="privatni">Privatni</option>
+            <option value="službeni">Službeni</option>
+        `
+        div.insertBefore(txt,btn)
+        div.insertBefore(slct,btn)
+    }
+    function submit(){
+        {
+            console.log("Iz htmla")
+            document.getElementById('form').submit();}
+    }
+</script>
