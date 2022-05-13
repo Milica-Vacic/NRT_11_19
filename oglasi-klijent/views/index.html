@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oglasi</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Oglasi</a>
+        <a href="/oglas/dodaj">Dodaj oglas</a>
+    </nav>
+    <form action="/oglas/kategorija" method="post">
+        <Label>Kategorija: </Label>
+        <select name="kat" id="kat">
+            <option value="Stanovi">Stanovi</option>
+            <option value="Alat">Alat</option>
+            <option value="Ljubimci">Ljubimci</option>
+            <option value="Nameštaj">Nameštaj</option>
+            <option value="Automobili">Automobili</option>
+            <option value="Kozmetika">Kozmetika</option>
+            <option value="Odeća">Odeća</option>
+            <option value="Obuća">Obuća</option>
+        </select>
+        <button type="submit">Filtriraj</button>
+    </form>
+    <form action="/oglas/oznaka" method="post">
+        <Label>Oznaka: </Label>
+        <input type="text" name="ozn" placeholder="Oznaka..."/>
+        <button type="submit">Filtriraj</button>
+    </form>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>Kategorija</th>
+            <th>Datum isteka</th>
+            <th>Cena</th>
+            <th>Tekst</th>
+            <th>Oznake</th>
+            <th>Email</th>
+        </tr>
+        <tbody>
+            #{DATA}
+        </tbody>
+    </table>
+    
+</body>
+</html>
+
+<style>
+    td,th {
+        padding: 5px;
+        max-width: 300px;
+    }
+    form {
+        margin: 10px;
+    }
+</style>
